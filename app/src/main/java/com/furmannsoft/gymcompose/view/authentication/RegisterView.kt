@@ -1,4 +1,4 @@
-package com.furmannsoft.gymcompose.view.login
+package com.furmannsoft.gymcompose.view.authentication
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
@@ -8,14 +8,15 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 
 @Composable
-fun LoginView(modifier: Modifier = Modifier, navController: NavHostController) {
+fun RegisterView(modifier: Modifier = Modifier, navController: NavHostController) {
+
     Column {
-        Text(text = "Welcome to Login page!")
+        Text(text = "Welcome to Register!")
         Button(onClick = {
             // Navigate to the second screen
-            navController.navigate("register")
+            navController.navigate("second")
         }) {
-            Text("Register")
+            Text("Salvar")
         }
     }
 }
